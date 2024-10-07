@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 400px;
+            position: absolute;
+            
+            animation: left-right 3s linear infinite 0s;
+        }
+        @keyframes left-right {
+            0%{
+                top: 0;
+                left: 0;
+              background-color: blueviolet;
+              transform: rotate(180deg);
+              
+            
+            }
+            25%{
+                top: 0;
+                left:calc(100% - 100px) ;
+                background-color: yellow;
+
+            }
+            50%{
+                left: calc(100% - 100px);
+                top:calc(100% - 100px);
+                background-color: orange;
+            }
+            75%{
+                top: calc(100% - 100px);
+                left: 0;
+                background-color: red;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                background-color: palevioletred;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
