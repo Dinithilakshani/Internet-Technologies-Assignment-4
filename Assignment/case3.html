@@ -13,35 +13,60 @@
             animation: left-right 3s linear infinite 0s;
         }
         @keyframes left-right {
-            0%{
-                top: 0;
-                left: 0;
-              background-color: blueviolet;
-              transform: rotate(180deg);
-              
-            
-            }
-            25%{
-                top: 0;
-                left:calc(100% - 100px) ;
-                background-color: yellow;
-
-            }
-            50%{
-                left: calc(100% - 100px);
-                top:calc(100% - 100px);
-                background-color: orange;
-            }
-            75%{
-                top: calc(100% - 100px);
-                left: 0;
-                background-color: red;
-            }
-            100%{
-                top: 0;
-                left: 0;
-                background-color: palevioletred;
-            }
+       0%{
+      top: 10px;
+      left: 0;
+      
+  }
+  12.5%{
+      top: 10px;
+      left: calc(100% - 175px);
+      background-color: yellow;
+      transform: rotate(180deg);
+  }
+  25%{
+      top: calc(100% - 135px);
+      left: calc(100% - 175px);
+      background-color: red;
+      transform: rotate(360deg);
+  }
+  37.5%{
+      top: calc(100% - 135px);
+      left: 0;
+      background-color: violet;
+      transform: rotate(180deg);
+  }
+  50%{
+      top: 10px;
+      left: 0;
+      background-color: orange;
+      transform: rotate(360deg);
+  }
+  62.5%{
+      top: calc(100% - 100px);
+      left: 0;
+      background-color: violet;
+      transform: rotate(180deg);
+  }
+  75%{
+      top: calc(100% - 135px);
+      left: calc(100% - 175px);
+      background-color: red;
+      transform: rotate(360deg);
+  }
+  87.5%{
+      top: 10px;
+      left: calc(100% - 175px);
+      background-color: yellow;
+      transform: rotate(180deg);
+  }
+  100%{
+      top: 10px;
+      left: 0;
+      background-color: blue;
+      transform: rotate(0deg);
+  }
+  
         }
 
         
